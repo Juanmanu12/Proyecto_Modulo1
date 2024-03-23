@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #F3E5D8;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#bitcook, h1, h2, h3 {
+    font-family: DM Serif Display;
+}
+
+a, p {
+    font-family: "DM Sans", sans-serif;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #255538;
+    padding: 12px 20px;
+    height: 58px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#grid-container {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1239px;
+    grid-template-columns: 400px 440px 400px;
+    grid-template-rows: 368px 101px 440px 440px;
+    grid-template-areas: 
+    "title title title"
+    "p p p"
+    "recipeA recipeB recipeC"
+    "recipeD recipeE recipeF";
+}
+
+#title {
+    grid-area: title;
+    background-image: url(../images/sheri-silver-q5C-_coAZR4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main #title h1 {
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+    
+}
+
+#separador {
+    display: flex;
+    grid-area: p;
+    flex-direction: row;
+    align-items: center;
+}
+
+main h2 {
+    font-size: 24px;
+    color: #7E4333;
+    display: flex;
+}
+
+.recipes {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+#recipeA {
+    grid-area: recipeA;
+    
+}
+
+main #recipeA a img {
+    height: 248px;
+    width: 380px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #255538;
+    padding: 12px 20px;
+    height: 58px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+footer p {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+
+    
