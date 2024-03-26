@@ -13,7 +13,11 @@ body {
     padding-bottom: 0;
 }
 
-#bitcook, h1, h2, h3 {
+a {
+    text-decoration: none;
+}
+
+.bitcook, h1, h2, h3 {
     font-family: DM Serif Display;
 }
 
@@ -38,6 +42,10 @@ header {
     margin-bottom: 28px;
 }
 
+#mainPage {
+    font-size: 24px;
+}
+
 header a {
     color: #FFFFFF;
     text-decoration: none;
@@ -47,13 +55,14 @@ header a {
     display: grid;
     margin: 0 auto;
     max-width: 1239px;
-    grid-template-columns: 400px 440px 400px;
+    grid-template-columns: 400px 400px 400px;
     grid-template-rows: 368px 101px 440px 440px;
     grid-template-areas: 
     "title title title"
     "p p p"
     "recipeA recipeB recipeC"
     "recipeD recipeE recipeF";
+    grid-gap: 20px;
 }
 
 #title {
@@ -66,11 +75,13 @@ header a {
     flex-direction: row;
     align-items: center;
     border-radius: 5px;
+    filter: brightness(75%);
 }
 
 main #title h1 {
     font-size: 64px;
-    color: rgb(0, 0, 0);
+    color: black;
+    filter: brightness(100%);
     
 }
 
@@ -102,6 +113,126 @@ main #recipeA a img {
     height: 248px;
     width: 380px;
     object-fit: cover;
+    border-radius: 5px;
+}
+
+#recipeA a h3 {
+    color: #7E4333;
+    font-size: 36px;
+}
+
+#recipeA a ul {
+    color: black;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+#recipeB {
+    grid-area: recipeB;
+}
+
+#recipeB a img{
+    height: 248px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#recipeB a h3 {
+    color: #7E4333;
+    font-size: 36px;
+}
+
+#recipeB a ul {
+    color: black;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+#recipeC {
+    grid-area: recipeC;
+}
+
+#recipeC a img {
+    height: 248px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#recipeC a h3 {
+    color: #7E4333;
+    font-size: 36px;
+}
+
+#recipeC a ul {
+    color: black;
+    font-size: 16px;
+    margin-top: 11px;
+}
+#recipeD {
+    grid-area: recipeD;
+}
+
+#recipeD a img {
+    height: 248px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#recipeD a h3 {
+    color: #7E4333;
+    font-size: 36px;
+}
+
+#recipeD a ul {
+    color: black;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+#recipeE {
+    grid-area: recipeE;
+}
+
+#recipeE a img {
+    height: 248px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#recipeE a h3 {
+    color: #7E4333;
+    font-size: 36px;
+}
+
+#recipeE a ul {
+    color: black;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+#recipeF {
+    grid-area: recipeF;
+}
+
+#recipeF a img {
+    height: 248px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#recipeF a h3 {
+    color: #7E4333;
+    font-size: 36px;
+}
+
+#recipeF a ul {
+    color: black;
+    font-size: 16px;
+    margin-top: 11px;
 }
 
 footer {
@@ -113,16 +244,19 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 80px;
 }
 
 footer a{
     font-size: 24px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 footer p {
     font-size: 16px;
     color: #FFFFFF;
+    
 }
 
 
