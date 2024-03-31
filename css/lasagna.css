@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, .bitcook{
+    font-family: DM Serif Display;
+}
+
+h1, h2 {
+    color: #7E4333;
+}
+
+p, li, td {
+    font-family:  "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+.bitcook {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F3E5D8;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #255538;
+    padding: 12px 20px;
+    height: 58px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 820px 400px;
+    grid-template-areas: 
+    "principal aside";
+    gap: 20px;
+
+}
+
+#principal {
+    grid-area: principal;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#principal h1 {
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+#principal img {
+    height: 287px;
+    width: 780px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#preparationTime {
+    background-color: #FFF7FC;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+#preparationTime ul {
+    margin-top: 13px;
+}
+
+#principal ol {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#aside {
+    display: flex;
+    flex-direction: column;
+}
+
+#details {
+    grid-area: details;
+    background-color: #FFFFFF;
+    padding: 20px;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+#details ul{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#details ul li {
+    padding: 2px;
+}
+
+#details table {
+    margin-top: 11px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#details table tr {
+    border-bottom: 1px solid #7E4333;
+}
+
+#details table tr td {
+    padding: 8px;
+}
+
+.right {
+    color: #7E4333;
+}
+
+#moreRecipes {
+    grid-area: moreRecipes;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+#moreRecipes img {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+#moreRecipes h3, p {
+    color: black;
+}
+
+#moreRecipes a {
+    display: flex;
+}
+
+footer {
+    background-color: #255538;
+    padding: 12px 20px;
+    height: 58px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #FFFFFF;
+    
+}

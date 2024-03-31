@@ -76,12 +76,14 @@ header a {
     align-items: center;
     border-radius: 5px;
     filter: brightness(75%);
+    position: relative;
 }
 
 main #title h1 {
     font-size: 64px;
-    color: black;
+    color: #000000;
     filter: brightness(100%);
+    position: absolute;
     
 }
 
