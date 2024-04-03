@@ -67,7 +67,7 @@ header a {
 
 #title {
     grid-area: title;
-    background-image: url(../images/sheri-silver-q5C-_coAZR4-unsplash.jpg);
+    background-image: url(../images/luke-johnson-inC_KZ5oZCI-unsplash.jpg);
     background-size: cover;
     background-position: center;
     padding: 56px;
@@ -75,13 +75,12 @@ header a {
     flex-direction: row;
     align-items: center;
     border-radius: 5px;
-    filter: brightness(75%);
     position: relative;
 }
 
 main #title h1 {
     font-size: 64px;
-    color: #000000;
+    color: #FFFFFF;
     filter: brightness(100%);
     position: absolute;
     
