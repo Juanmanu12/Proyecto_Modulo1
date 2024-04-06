@@ -61,10 +61,11 @@ header a {
 main {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 820px 400px;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
     "principal aside";
     gap: 20px;
+    max-width: 1240px;
 
 }
 
@@ -82,7 +83,7 @@ main {
 
 #principal img {
     height: 287px;
-    width: 780px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -105,6 +106,7 @@ main {
 #aside {
     display: flex;
     flex-direction: column;
+    gap: 20px
 }
 
 #details {
@@ -112,7 +114,7 @@ main {
     background-color: #FFFFFF;
     padding: 20px;
     height: fit-content;
-    margin-bottom: 20px;
+    border-radius: 6px;
 }
 
 #details ul{
@@ -147,6 +149,11 @@ main {
     grid-area: moreRecipes;
     background-color: #FFFFFF;
     padding: 20px;
+    border-radius: 6px;
+}
+
+#moreRecipes h2{
+    margin-bottom: 11px;
 }
 
 #moreRecipes a img {
@@ -182,4 +189,14 @@ footer p {
     font-size: 16px;
     color: #FFFFFF;
     
+}
+
+@media(max-width: 768px){
+    main {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
 }

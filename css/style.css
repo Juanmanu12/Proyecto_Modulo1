@@ -34,6 +34,7 @@ header {
     background-color: #255538;
     padding: 12px 20px;
     height: 58px;
+    width: 100%;
     border-radius: 6px;
     display: flex;
     flex-direction: row;
@@ -55,10 +56,9 @@ header a {
     display: grid;
     margin: 0 auto;
     max-width: 1239px;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 368px 101px 440px 440px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 101px fit-content fit-content;
     grid-template-areas: 
-    "title title title"
     "p p p"
     "recipeA recipeB recipeC"
     "recipeD recipeE recipeF";
@@ -66,7 +66,6 @@ header a {
 }
 
 #title {
-    grid-area: title;
     background-image: url(../images/luke-johnson-inC_KZ5oZCI-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -76,21 +75,23 @@ header a {
     align-items: center;
     border-radius: 5px;
     position: relative;
+    width: 100%;
+    height: 368px;
+    max-width: 1239px;
+    margin: 0 auto;
 }
 
 main #title h1 {
     font-size: 64px;
     color: #FFFFFF;
-    filter: brightness(100%);
     position: absolute;
     
 }
 
 #separador {
-    display: flex;
     grid-area: p;
-    flex-direction: row;
-    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 28px;
 }
 
 main h2 {
@@ -103,6 +104,7 @@ main h2 {
     padding: 10px;
     background-color: #FFFFFF;
     border-radius: 5px;
+    width: 100%;
 }
 
 #recipeA {
@@ -112,7 +114,7 @@ main h2 {
 
 main #recipeA a img {
     height: 248px;
-    width: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -134,7 +136,7 @@ main #recipeA a img {
 
 #recipeB a img{
     height: 248px;
-    width: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -155,7 +157,7 @@ main #recipeA a img {
 
 #recipeC a img {
     height: 248px;
-    width: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -176,7 +178,7 @@ main #recipeA a img {
 
 #recipeD a img {
     height: 248px;
-    width: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -198,7 +200,7 @@ main #recipeA a img {
 
 #recipeE a img {
     height: 248px;
-    width: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -220,7 +222,7 @@ main #recipeA a img {
 
 #recipeF a img {
     height: 248px;
-    width: 380px;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -240,6 +242,7 @@ footer {
     background-color: #255538;
     padding: 12px 20px;
     height: 58px;
+    width: 100%;
     border-radius: 6px;
     display: flex;
     flex-direction: row;
@@ -260,6 +263,34 @@ footer p {
     
 }
 
+@media(max-width: 768px) {
+    main {
+        #grid-container {
+            display: grid;
+    margin: 0 auto;
+    max-width: 1239px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 101px 440px 440px 440px;
+    grid-template-areas: 
+    "p p"
+    "recipeA recipeB"
+    "recipeC recipeD"
+    "recipeE recipeF";
+    gap: 20px;
+        }
+    }
+}
 
+@media(max-width: 560px) {
+    main {
+        #grid-container {
+            display: flex;
+    margin: 0 auto;
+    max-width: 1239px;
+    flex-direction: column;
+    gap: 20px;
+        }
+    }
+}
 
     
