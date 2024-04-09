@@ -173,6 +173,11 @@ main {
 
 }
 
+.separation {
+    margin-bottom: 20px;
+    display: block;
+}
+
 footer {
     background-color: #255538;
     padding: 12px 20px;
