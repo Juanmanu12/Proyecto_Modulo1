@@ -52,6 +52,18 @@ header a {
     text-decoration: none;
 }
 
+#darkmode img {
+    height: 33px;
+    border: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 #grid-container {
     display: grid;
     margin: 0 auto;
@@ -105,6 +117,11 @@ main h2 {
     background-color: #FFFFFF;
     border-radius: 5px;
     width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.recipes:hover {
+    transform: scale(1.2);
 }
 
 #recipeA {
@@ -238,6 +255,59 @@ main #recipeA a img {
     margin-top: 11px;
 }
 
+.nightMode {
+    background-color: black;
+}
+
+.nightMode main div #recipeA{
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.nightMode main div #recipeB{
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.nightMode main div #recipeC{
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.nightMode main div #recipeD{
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.nightMode main div #recipeE{
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.nightMode main div #recipeF{
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.nightMode main div h2{
+    color: #FFFFFF;
+}
+
+.nightMode main div ul li{
+    color: #FFFFFF;
+}
+
+.nightMode #recipeA a h3, .nightMode #recipeB a h3, .nightMode #recipeC a h3, .nightMode #recipeD a h3,.nightMode #recipeE a h3, .nightMode #recipeF a h3{
+    color: #FFFFFF;
+}
+
 footer {
     background-color: #255538;
     padding: 12px 20px;
@@ -293,4 +363,3 @@ footer p {
     }
 }
 
-    

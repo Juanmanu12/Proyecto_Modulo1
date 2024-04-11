@@ -11,7 +11,7 @@ h1, h2, h3, .bitcook{
     font-family: DM Serif Display;
 }
 
-h1, h2 {
+main h1, main h2 {
     color: #7E4333;
 }
 
@@ -58,6 +58,51 @@ header a {
     text-decoration: none;
 }
 
+#darkmode img {
+    height: 33px;
+    border: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nightMode {
+    background-color: black;
+}
+
+.nightMode #principal {
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.nightMode #preparationTime {
+    background-color: #4E4D4E;
+}
+
+.nightMode #details {
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.nightMode #moreRecipes {
+    background-color: #2F2F2F;  
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.nightMode main h1, .nightMode main h2, .nightMode main h3, .nightMode table td, .nightMode main ol li, .nightMode main ul li, .nightMode main p, .nightMode #moreRecipes h3 {
+    color: #FFFFFF;
+}
+
 main {
     margin: 0 auto;
     display: grid;
@@ -89,6 +134,7 @@ main {
 }
 
 #preparationTime {
+    margin: 20px 0;
     background-color: #FFF7FC;
     padding: 20px;
     padding-bottom: 30px;
@@ -150,6 +196,8 @@ main {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 6px;
+    padding-bottom: 10px;
+    
 }
 
 #moreRecipes h2{
@@ -162,6 +210,7 @@ main {
     margin-right: 20px;
     object-fit: cover;
     aspect-ratio: 1/1;
+    border-radius: 5px;
 }
 
 #moreRecipes h3, p {
@@ -170,7 +219,11 @@ main {
 
 #moreRecipes a {
     display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
+#moreRecipes a:hover {
+    transform: scale(1.1);
 }
 
 .separation {
@@ -205,3 +258,4 @@ footer p {
         width: 100%;
     }
 }
+

@@ -38,8 +38,35 @@ header {
     margin-bottom: 28px;
 }
 
+#darkmode img {
+    height: 33px;
+    border: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 #mainPage {
     font-size: 24px;
+}
+
+.nightMode {
+    background-color: black;
+}
+
+.nightMode #form {
+    background-color: #2F2F2F;
+}
+.nightMode #form h1, .nightMode #form form label, .nightMode #form p {
+    color: white;
+}
+
+.nightMode #form input, .nightMode #form textarea {
+    background-color: #4E4D4E;
 }
 
 header a {
