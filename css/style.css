@@ -340,7 +340,7 @@ footer p {
     margin: 0 auto;
     max-width: 1239px;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 101px 440px 440px 440px;
+    grid-template-rows: 101px auto auto auto;
     grid-template-areas: 
     "p p"
     "recipeA recipeB"
